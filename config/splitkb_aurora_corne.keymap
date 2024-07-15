@@ -145,7 +145,7 @@
         &trans &trans &trans &trans &trans &trans  &trans   &trans    &trans   &trans    &trans &kp PSCRN
         &trans &trans &trans &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
         &trans &trans &trans &trans &trans &trans  &trans   &trans    &trans   &trans    &trans &trans
-                             &trans &trans &trans  &trans   &kp UNDER &kb CAPS
+                             &trans &trans &trans  &trans   &kp UNDER &kp CAPS
       >;
     };
 
