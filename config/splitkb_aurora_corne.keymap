@@ -77,6 +77,12 @@
       bindings = <&kp COLON>, <&kp QMARK>;
       mods = <(MOD_LSFT)>;
     };
+    r20: r20 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp SPACE>, <&kp UNDER>;
+      mods = <(MOD_LSFT)>;
+    };
 
     rrse7: rrse7 {
       compatible = "zmk,behavior-mod-morph";
@@ -119,48 +125,28 @@
 
   keymap {
     compatible = "zmk,keymap";
-/*******************************************************************************
-| TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-|  `  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  /  |  '   |
-|  ~  |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  .  |  ,  |  :  | ESC  |
-                  | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-*******************************************************************************/
     default_layer {
       bindings = <
-        &kp TAB    &kp Q &kp W &kp E    &kp R     &kp T  &kp Y &kp U     &kp I     &kp O &kp P &kp BSPC
-        &kp GRAVE  &kp A &kp S &kp D    &kp F     &kp G  &kp H &kp J     &kp K     &kp L &r11  &r12
-        &kp TILDE2 &kp Z &kp X &kp C    &kp V     &kp B  &kp N &kp M     &r15      &r16  &r17  &kp ESC
-                               &kp LALT &kp LSHFT &mo 1  &mo 2 &kp SPACE &kp LCTRL
+        &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T      &kp Y &kp U &kp I     &kp O &kp P &kp BSPC
+        &kp GRAVE &kp A &kp S &kp D    &kp F     &kp G      &kp H &kp J &kp K     &kp L &r11  &r12
+        &kp TILDE &kp Z &kp X &kp C    &kp V     &kp B      &kp N &kp M &r15      &r16  &r17  &kp ESC
+                              &kp LALT &kp LSHFT &kp LCTRL  &mo 2 &r20  &mo 1
       >;
     };
-
-/*******************************************************************************
-|  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-| BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-| SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-                   | GUI |     | SPC |   | ENT |     | ALT |
-*******************************************************************************/
     lower_layer {
       bindings = <
-        &trans &trans &trans &trans &trans &trans  &trans   &trans    &trans   &trans    &trans &kp PSCRN
-        &trans &trans &trans &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
         &trans &trans &trans &trans &trans &trans  &trans   &trans    &trans   &trans    &trans &trans
-                             &trans &trans &trans  &trans   &kp UNDER &kp CAPS
+        &trans &trans &trans &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
+        &trans &trans &trans &trans &trans &trans  &trans   &trans    &trans   &trans    &trans &kp PSCRN
+                             &trans &trans &trans  &trans   &kp UNDER &trans
       >;
     };
-
-/*******************************************************************************
-|  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-| CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-| SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-                   | GUI |     | SPC |   | ENT |     | ALT |
-*******************************************************************************/
     raise_layer {
       bindings = <
-        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LPAR  &kp RPAR &kp EQUAL &kp AMPS &kp PIPE &kp CARET &kp INS
+        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LPAR  &kp RPAR &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
-        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &trans
-                                   &kp LGUI &kp RET   &trans    &trans   &trans    &trans
+        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
+                                   &kp LGUI &kp RET   &kp CAPS  &trans   &trans    &trans
       >;
     };
   };
