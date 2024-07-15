@@ -65,13 +65,13 @@
     r15: r15 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp EXCL>;
+      bindings = <&kp COMMA>, <&kp SEMI>;
       mods = <(MOD_LSFT)>;
     };
     r16: r16 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp SEMI>;
+      bindings = <&kp DOT>, <&kp EXCL>;
       mods = <(MOD_LSFT)>;
     };
     r17: r17 {
