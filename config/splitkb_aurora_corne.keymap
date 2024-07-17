@@ -16,7 +16,7 @@
     lrse7: lrse7 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp LBKT>, <&kp F11>;
+      bindings = <&kp LPAR>, <&kp F11>;
       mods = <(MOD_LSFT)>;
     };
     lrse8: lrse8 {
@@ -78,7 +78,7 @@
     rrse7: rrse7 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp RBKT>, <&kp F12>;
+      bindings = <&kp RPAR>, <&kp F12>;
       mods = <(MOD_LSFT)>;
     };
     rrse8: rrse8 {
@@ -133,9 +133,9 @@
     };
     raise_layer {
       bindings = <
-        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LPAR  &kp RPAR &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
+        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBRC  &kp RBRC &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
-        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
+        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBKT  &kp RBKT &kp GT    &trans   &trans   &trans    &kp INS
                                    &kp DEL  &kp CAPS  &kp RET   &trans   &trans    &trans
       >;
     };
