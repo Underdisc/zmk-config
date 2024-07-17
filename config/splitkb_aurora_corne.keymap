@@ -133,9 +133,9 @@
     };
     raise_layer {
       bindings = <
-        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBRC  &kp RBRC &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
+        &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
-        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBKT  &kp RBKT &kp GT    &trans   &trans   &trans    &kp INS
+        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
                                    &kp DEL  &kp CAPS  &kp RET   &trans   &trans    &trans
       >;
     };
