@@ -53,13 +53,13 @@
     r11: r11 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp FSLH>, <&kp BSLH>;
+      bindings = <&kp SQT>, <&kp DQT>;
       mods = <(MOD_LSFT)>;
     };
     r12: r12 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp SQT>, <&kp DQT>;
+      bindings = <&kp COLON>, <&kp QMARK>;
       mods = <(MOD_LSFT)>;
     };
     r15: r15 {
@@ -77,7 +77,7 @@
     r17: r17 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp COLON>, <&kp QMARK>;
+      bindings = <&kp FSLH>, <&kp BSLH>;
       mods = <(MOD_LSFT)>;
     };
     r20: r20 {
@@ -124,7 +124,6 @@
       mods = <(MOD_LSFT)>;
     };
   };
-
 
   keymap {
     compatible = "zmk,keymap";
