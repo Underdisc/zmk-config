@@ -50,28 +50,16 @@
       mods = <(MOD_LSFT)>;
     };
 
-    r11: r11 {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp SQT>, <&kp DQT>;
-      mods = <(MOD_LSFT)>;
-    };
-    r12: r12 {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp COLON>, <&kp QMARK>;
-      mods = <(MOD_LSFT)>;
-    };
     r15: r15 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp COMMA>, <&kp SEMI>;
+      bindings = <&kp QMARK>, <&kp EXCL>;
       mods = <(MOD_LSFT)>;
     };
     r16: r16 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp DOT>, <&kp EXCL>;
+      bindings = <&kp DOT>, <&kp COMMA>;
       mods = <(MOD_LSFT)>;
     };
     r17: r17 {
@@ -129,9 +117,9 @@
     compatible = "zmk,keymap";
     default_layer {
       bindings = <
-        &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T      &kp Y &kp U &kp I     &kp O &kp P &kp BSPC
-        &kp GRAVE &kp A &kp S &kp D    &kp F     &kp G      &kp H &kp J &kp K     &kp L &r11  &r12
-        &kp LGUI  &kp Z &kp X &kp C    &kp V     &kp B      &kp N &kp M &r15      &r16  &r17  &kp ESC
+        &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T      &kp Y &kp U &kp I     &kp O &kp P    &kp BSPC
+        &kp GRAVE &kp A &kp S &kp D    &kp F     &kp G      &kp H &kp J &kp K     &kp L &kp SEMI &kp SQT
+        &kp LGUI  &kp Z &kp X &kp C    &kp V     &kp B      &kp N &kp M &r15      &r16  &r17     &kp ESC
                               &kp LALT &kp LSHFT &kp LCTRL  &mo 2 &r20  &mo 1
       >;
     };
