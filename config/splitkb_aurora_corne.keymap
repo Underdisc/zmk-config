@@ -13,6 +13,13 @@
 
 / {
   behaviors {
+    l18: l18 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&kp LGUI>, <&kp CAPS>;
+      mods = <(MOD_LSFT)>;
+    };
+
     lrse7: lrse7 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
@@ -119,7 +126,7 @@
       bindings = <
         &kp TAB   &kp Q &kp W &kp E    &kp R     &kp T      &kp Y &kp U &kp I     &kp O &kp P    &kp BSPC
         &kp GRAVE &kp A &kp S &kp D    &kp F     &kp G      &kp H &kp J &kp K     &kp L &kp SEMI &kp SQT
-        &kp LGUI  &kp Z &kp X &kp C    &kp V     &kp B      &kp N &kp M &r15      &r16  &r17     &kp ESC
+        &l18      &kp Z &kp X &kp C    &kp V     &kp B      &kp N &kp M &r15      &r16  &r17     &kp ESC
                               &kp LALT &kp LSHFT &kp LCTRL  &mo 2 &r20  &mo 1
       >;
     };
@@ -136,7 +143,7 @@
         &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
         &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
-                                   &kp DEL  &kp CAPS  &kp RET   &trans   &trans    &trans
+                                   &kp DEL  &trans    &kp RET   &trans   &trans    &trans
       >;
     };
   };
