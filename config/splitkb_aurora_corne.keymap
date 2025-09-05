@@ -129,7 +129,7 @@ ZMK_UNICODE_SINGLE(de_raz, N2, N0, N1, C)
     rlwr12: rlwr12 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&de_laz>, <&de_raz>;
+      bindings = <&de_laz>, <&kp A>;
       mods = <(MOD_LSFT)>;
     };
   };
