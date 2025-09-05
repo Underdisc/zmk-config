@@ -11,9 +11,13 @@
 // Deutsch character helpers
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-// Left and right Anführungszeichnen (q stands for quote)
-ZMK_UNICODE_SINGLE(de_lq, N0, N0, B, B)
-ZMK_UNICODE_SINGLE(de_rq, N0, N0, A, B)
+// Left and right Guillemets
+ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)
+ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)
+// Left and right Anführungszeichnen
+ZMK_UNICODE_PAIR(de_az,
+  N2, N0, N1, E,
+  N2, N0, N1, C)
 
 / {
   behaviors {
@@ -136,9 +140,9 @@ ZMK_UNICODE_SINGLE(de_rq, N0, N0, A, B)
     };
     lower_layer {
       bindings = <
-        &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans   &de_oe    &trans &trans
-        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
-        &trans &trans &trans     &trans &de_lq &trans  &trans   &de_rq    &trans   &trans    &trans &kp PSCRN
+        &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans &de_oe    &trans &trans
+        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &de_az
+        &trans &trans &trans     &trans &de_lg &trans  &trans   &de_rg    &trans &trans    &trans &kp PSCRN
                                  &trans &trans &trans  &trans   &kp UNDER &trans
       >;
     };
