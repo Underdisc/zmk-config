@@ -146,9 +146,9 @@ ZMK_UNICODE_SINGLE(de_raz, N2, N0, N1, C)
     };
     lower_layer {
       bindings = <
-        &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans   &de_oe    &trans &trans
-        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &rlwr12
-        &trans &trans &trans     &trans &de_lg &trans  &trans   &de_rg    &trans   &trans    &trans &kp PSCRN
+        &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans  &de_oe    &trans &trans
+        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP  &kp RIGHT &trans &rlwr12
+        &trans &trans &trans     &trans &de_lg &trans  &trans   &de_rg    &de_raz &trans    &trans &kp PSCRN
                                  &trans &trans &trans  &trans   &kp UNDER &trans
       >;
     };
