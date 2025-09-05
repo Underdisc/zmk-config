@@ -11,9 +11,12 @@
 // Deutsch character helpers
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-// Left and right Anführungszeichnen (q stands for quote)
-ZMK_UNICODE_SINGLE(de_lq, N0, N0, B, B)
-ZMK_UNICODE_SINGLE(de_rq, N0, N0, A, B)
+// Left and right Guillemets
+ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)
+ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)
+// Left and right Anführungszeichnen
+ZMK_UNICODE_SINGLE(de_laz, N2, N0, N1, E)
+ZMK_UNICODE_SINGLE(de_raz, N2, N0, N1, C)
 
 / {
   behaviors {
@@ -122,6 +125,13 @@ ZMK_UNICODE_SINGLE(de_rq, N0, N0, A, B)
       bindings = <&kp N9>, <&kp F9>;
       mods = <(MOD_LSFT)>;
     };
+
+    rlwr12: rlwr12 {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&de_laz>, <&de_raz>;
+      mods = <(MOD_LSFT)>;
+    };
   };
 
   keymap {
@@ -137,8 +147,8 @@ ZMK_UNICODE_SINGLE(de_rq, N0, N0, A, B)
     lower_layer {
       bindings = <
         &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans   &de_oe    &trans &trans
-        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &trans
-        &trans &trans &trans     &trans &de_lq &trans  &trans   &de_rq    &trans   &trans    &trans &kp PSCRN
+        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP   &kp RIGHT &trans &rlwr12
+        &trans &trans &trans     &trans &de_lg &trans  &trans   &de_rg    &trans   &trans    &trans &kp PSCRN
                                  &trans &trans &trans  &trans   &kp UNDER &trans
       >;
     };
