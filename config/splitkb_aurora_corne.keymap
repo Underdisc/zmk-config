@@ -8,24 +8,16 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Deutsch character helpers
+// Unicode character helpers
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-// Left and right Guillemets »«
-ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)
-ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)
-// Left and right Anführungszeichnen „“
-ZMK_UNICODE_PAIR(de_az,
-  N2, N0, N1, E,
-  N2, N0, N1, C)
-// Currency Symbol $€
-ZMK_UNICODE_PAIR(cu,
-  N0, N0, 2, 4)
-  N2, N0, A, C)
-// Rotated Punctation ¿¡
-ZMK_UNICODE_PAIR(rp,
-  N0, N0, B, F,
-  N0, N0, A, N1)
+
+ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)                  // » left guillemet
+ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)                  // « right guillemet
+ZMK_UNICODE_PAIR(de_az,   N2, N0, N1, E,  N2, N0, N1, C) // „“ anführungszeichnen
+
+ZMK_UNICODE_PAIR(cu,  N0, N0, 2, 4,  N2, N0, A, C)  // $€ currency symbol
+ZMK_UNICODE_PAIR(rp,  N0, N0, B, F,  N0, N0, A, N1) // ¿¡ rotated punctation
 
 // Español
 ZMK_UNICODE_PAIR(es_a_acute,    N0, N0, E, N1,  N0, N0, C, N1) // áÁ
