@@ -22,6 +22,19 @@ ZMK_UNICODE_PAIR(de_az,
 ZMK_UNICODE_PAIR(cu,
   N0, N0, 2, 4)
   N2, N0, A, C)
+// Rotated Punctation ¿¡
+ZMK_UNICODE_PAIR(rp,
+  N0, N0, B, F,
+  N0, N0, A, N1)
+
+// Español
+ZMK_UNICODE_PAIR(es_a_acute,    N0, N0, E, N1,  N0, N0, C, N1) // áÁ
+ZMK_UNICODE_PAIR(es_c_cedilla,  N0, N0, E, N7,  N0, N0, C, N7) // çÇ
+ZMK_UNICODE_PAIR(es_e_acute,    N0, N0, E, N9,  N0, N0, C, N9) // éÉ
+ZMK_UNICODE_PAIR(es_i_acute,    N0, N0, E, D,   N0, N0, C, D)  // íÍ
+ZMK_UNICODE_PAIR(es_o_acute,    N0, N0, F, N3,  N0, N0, D, N3) // óÓ
+ZMK_UNICODE_PAIR(es_u_acute,    N0, N0, F, A,   N0, N0, D, A)  // úÚ
+ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
 
 / {
   behaviors {
@@ -144,10 +157,10 @@ ZMK_UNICODE_PAIR(cu,
     };
     lower_layer {
       bindings = <
-        &trans &trans &trans     &trans &trans &trans  &trans   &de_ue    &trans &de_oe    &trans &trans
-        &trans &de_ae &de_eszett &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &de_az
-        &trans &trans &trans     &trans &de_lg &trans  &trans   &de_rg    &trans &trans    &trans &kp PSCRN
-                                 &trans &trans &trans  &trans   &kp UNDER &trans
+        &trans &trans      &trans     &es_e_acute   &trans &trans  &es_u_acute &de_ue    &es_i_acute &de_oe    &es_o_acute &trans
+        &trans &de_ae      &de_eszett &trans        &trans &trans  &kp LEFT    &kp DOWN  &kp UP      &kp RIGHT &trans      &de_az
+        &trans &es_a_acute &trans     &es_c_cedilla &de_lg &trans  &es_n_tilde &de_rg    &rp         &trans    &trans      &kp PSCRN
+                                      &trans        &trans &trans  &trans      &kp UNDER &trans
       >;
     };
     raise_layer {
