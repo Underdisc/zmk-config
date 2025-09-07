@@ -11,13 +11,17 @@
 // Deutsch character helpers
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/unicode-chars/german.dtsi"
-// Left and right Guillemets
+// Left and right Guillemets »«
 ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)
 ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)
-// Left and right Anführungszeichnen
+// Left and right Anführungszeichnen „“
 ZMK_UNICODE_PAIR(de_az,
   N2, N0, N1, E,
   N2, N0, N1, C)
+// Currency Symbol $€
+ZMK_UNICODE_PAIR(cu,
+  N0, N0, 2, 4)
+  N2, N0, A, C)
 
 / {
   behaviors {
@@ -150,7 +154,7 @@ ZMK_UNICODE_PAIR(de_az,
       bindings = <
         &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
-        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
+        &trans  &kp AT   &kp HASH  &cu      &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
                                    &kp DEL  &trans    &kp RET   &trans   &trans    &trans
       >;
     };
