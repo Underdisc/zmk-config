@@ -16,7 +16,6 @@ ZMK_UNICODE_SINGLE(de_lg, N0, N0, B, B)                  // » left guillemet
 ZMK_UNICODE_SINGLE(de_rg, N0, N0, A, B)                  // « right guillemet
 ZMK_UNICODE_PAIR(de_az,   N2, N0, N1, E,  N2, N0, N1, C) // „“ anführungszeichnen
 
-ZMK_UNICODE_PAIR(cu,  N0, N0, 2, 4,  N2, N0, A, C)  // $€ currency symbol
 ZMK_UNICODE_PAIR(rp,  N0, N0, B, F,  N0, N0, A, N1) // ¿¡ rotated punctation
 
 // Español
@@ -159,7 +158,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
       bindings = <
         &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
-        &trans  &kp AT   &kp HASH  &cu      &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
+        &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
                                    &kp DEL  &trans    &kp RET   &trans   &trans    &trans
       >;
     };
