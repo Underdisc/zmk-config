@@ -151,8 +151,8 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
         <&macro_press &kp LSHFT>,
         <&macro_tap RET>,
         <&macro_release &kp LSHFT>;
-    }
-  }
+    };
+  };
 
   keymap {
     compatible = "zmk,keymap";
