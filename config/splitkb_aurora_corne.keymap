@@ -137,6 +137,17 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
     };
   };
 
+  macros {
+    lrse20: lrse20 {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings =
+        <&macro_press &kp LSHFT>,
+        <&macro_tap RET>,
+        <&macro_release &kp LSHFT>;
+    }
+  }
+
   keymap {
     compatible = "zmk,keymap";
     default_layer {
@@ -160,7 +171,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
         &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
         &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
-                                   &kp DEL  &trans    &kp RET   &trans   &trans    &trans
+                                   &kp DEL  &lrse20   &kp RET   &trans   &trans    &trans
       >;
     };
   };
