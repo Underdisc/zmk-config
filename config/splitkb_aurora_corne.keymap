@@ -149,7 +149,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
       #binding-cells = <0>;
       bindings =
         <&macro_press &kp LSHFT>,
-        <&macro_tap RET>,
+        <&macro_tap &kp RET>,
         <&macro_release &kp LSHFT>;
     };
   };
