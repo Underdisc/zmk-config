@@ -144,7 +144,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
   };
 
   macros {
-    llwr19: llwr19 {
+    lrse20: lrse20 {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings =
@@ -169,7 +169,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
         &trans &trans      &trans     &es_e_acute   &trans &trans  &es_u_acute &de_ue    &es_i_acute &de_oe    &es_o_acute &trans
         &trans &de_ae      &de_eszett &trans        &trans &trans  &kp LEFT    &kp DOWN  &kp UP      &kp RIGHT &trans      &de_az
         &trans &es_a_acute &trans     &es_c_cedilla &de_lg &trans  &es_n_tilde &de_rg    &rp         &trans    &trans      &kp PSCRN
-                                      &trans        &trans &llwr19 &trans      &kp UNDER &trans
+                                      &trans        &trans &trans  &trans      &kp UNDER &trans
       >;
     };
     raise_layer {
@@ -177,7 +177,7 @@ ZMK_UNICODE_PAIR(es_n_tilde,    N0, N0, F, N1,  N0, N0, D, N1) // ñÑ
         &trans  &kp PLUS &kp MINUS &kp STAR &kp PRCNT &kp LBKT  &kp RBKT &kp EQUAL &kp AMPS &kp PIPE &kp CARET &trans
         &lrse12 &lrse11  &lrse10   &lrse9   &lrse8    &lrse7    &rrse7   &rrse8    &rrse9   &rrse10  &rrse11   &rrse12
         &trans  &kp AT   &kp HASH  &kp DLLR &kp LT    &kp LBRC  &kp RBRC &kp GT    &trans   &trans   &trans    &kp INS
-                                   &trans   &trans    &kp RET   &trans   &trans    &trans
+                                   &trans   &lrse20   &kp RET   &trans   &trans    &trans
       >;
     };
   };
