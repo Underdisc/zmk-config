@@ -19,9 +19,9 @@
 #define UC_ES_RP 0x00bf 0x00a1 // ¿¡ rotated punctation
 
 &uc {
-  default-mode = <UC_MODE_LINUX>;
+  default-mode = <UC_MODE_LINUX_ALT>;
   minimum-length = <0>;
-  linux-key = <LC(LS(U))>;
+  linux-alt-key = <LC(LS)>;
 };
 
 / {
