@@ -20,8 +20,6 @@
 
 &uc {
   default-mode = <UC_MODE_LINUX_ALT>;
-  minimum-length = <0>;
-  linux-alt-key = <LC(LSHFT)>;
 };
 
 / {
