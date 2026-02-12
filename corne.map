@@ -1,0 +1,19 @@
+include "/usr/share/kbd/keymaps/i386/qwerty/us.map.gz"
+
+keycode 79 = adiaeresis Adiaeresis
+keycode 80 = odiaeresis Odiaeresis
+keycode 81 = udiaeresis Udiaeresis
+keycode 75 = ssharp U+1E9E
+keycode 76 = guillemotleft
+keycode 77 = guillemotright
+keycode 71 = U+201E U+201D
+
+keycode 184 = aacute Aacute
+keycode 185 = ccedilla Ccedilla
+keycode 186 = eacute Eacute
+keycode 187 = iacute Iacute
+keycode 188 = oacute Oacute
+keycode 189 = uacute Uacute
+keycode 190 = ntilde Ntilde
+keycode 191 = questiondown exclamdown
+

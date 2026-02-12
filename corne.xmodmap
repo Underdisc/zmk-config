@@ -1,0 +1,17 @@
+keycode 87 = adiaeresis Adiaeresis
+keycode 88 = odiaeresis Odiaeresis
+keycode 89 = udiaeresis Udiaeresis
+keycode 83 = ssharp U1E9E
+keycode 84 = guillemotleft
+keycode 85 = guillemotright
+keycode 79 = U201E U201D
+
+keycode 192 = aacute Aacute
+keycode 193 = ccedilla Ccedilla
+keycode 194 = eacute Eacute
+keycode 195 = iacute Iacute
+keycode 196 = oacute Oacute
+keycode 197 = uacute Uacute
+keycode 198 = ntilde Ntilde
+keycode 199 = questiondown exclamdown
+
