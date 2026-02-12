@@ -20,9 +20,9 @@ keycodes are repurposed for my desired character set.
 #define OE KP_N2 // öÖ
 #define UE KP_N3 // üÜ
 #define EZ KP_N4 // ßẞ
-#define AZ KP_N7 // „“
 #define LG KP_N5 // «
 #define RG KP_N6 // »
+#define AZ KP_N7 // „“
 
 // Spanish Chararacters
 #define AA F14 // áÁ
