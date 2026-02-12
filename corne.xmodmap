@@ -1,3 +1,4 @@
+! Deutsch Buchstaben
 keycode 87 = adiaeresis Adiaeresis
 keycode 88 = odiaeresis Odiaeresis
 keycode 89 = udiaeresis Udiaeresis
@@ -6,6 +7,7 @@ keycode 84 = guillemotleft
 keycode 85 = guillemotright
 keycode 79 = U201E U201D
 
+! Letras Españolas
 keycode 192 = aacute Aacute
 keycode 193 = ccedilla Ccedilla
 keycode 194 = eacute Eacute
