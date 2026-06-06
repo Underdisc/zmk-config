@@ -15,5 +15,5 @@ keycode 195 = iacute Iacute
 keycode 196 = oacute Oacute
 keycode 197 = uacute Uacute
 keycode 198 = ntilde Ntilde
-keycode 199 = questiondown exclamdown
+keycode 199 = exclamdown questiondown
 

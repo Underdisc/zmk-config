@@ -32,7 +32,7 @@ keycodes are repurposed for my desired character set.
 #define OA F18 // óÓ
 #define UA F19 // úÚ
 #define NT F20 // ñÑ
-#define RP F21 // ¿¡
+#define RP F21 // ¡¿
 
 / {
   behaviors {
@@ -89,7 +89,7 @@ keycodes are repurposed for my desired character set.
     r15: r15 {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&kp QMARK>, <&kp EXCL>;
+      bindings = <&kp EXCL>, <&kp QMARK>;
       mods = <(MOD_LSFT)>;
     };
     r16: r16 {

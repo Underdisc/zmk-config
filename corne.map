@@ -17,5 +17,5 @@ keycode 187 = iacute Iacute
 keycode 188 = oacute Oacute
 keycode 189 = uacute Uacute
 keycode 190 = ntilde Ntilde
-keycode 191 = questiondown exclamdown
+keycode 191 = exclamdown questiondown
 
