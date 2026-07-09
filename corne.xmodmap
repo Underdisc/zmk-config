@@ -6,6 +6,7 @@ keycode 83 = ssharp U1E9E
 keycode 84 = guillemotleft
 keycode 85 = guillemotright
 keycode 79 = U201E U201D
+keycode 80 = U1F642 U1F643
 
 ! Letras Españolas
 keycode 192 = aacute Aacute

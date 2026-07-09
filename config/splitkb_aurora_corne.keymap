@@ -34,6 +34,9 @@ keycodes are repurposed for my desired character set.
 #define NT F20 // ñÑ
 #define RP F21 // ¡¿
 
+// Other
+#define SM KP_N8 // Smileys
+
 / {
   behaviors {
     l18: l18 {
@@ -173,7 +176,7 @@ keycodes are repurposed for my desired character set.
     lower_layer {
       bindings = <
         &trans &trans &trans &kp EA &trans &trans  &kp UA   &kp UE    &kp IA &kp OE    &kp OA &trans
-        &trans &kp AE &kp EZ &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP &kp RIGHT &trans &kp AZ
+        &trans &kp AE &kp EZ &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP &kp RIGHT &kp SM &kp AZ
         &trans &kp AA &trans &kp CC &kp LG &trans  &kp NT   &kp RG    &kp RP &trans    &trans &kp PSCRN
                              &trans &trans &trans  &trans   &kp UNDER &trans
       >;

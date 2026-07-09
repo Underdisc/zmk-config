@@ -8,6 +8,7 @@ keycode 75 = ssharp U+1E9E
 keycode 76 = guillemotleft
 keycode 77 = guillemotright
 keycode 71 = U+201E U+201D
+keycode 72 = U+1F642 U+1F643
 
 ! Letras Españolas
 keycode 184 = aacute Aacute
